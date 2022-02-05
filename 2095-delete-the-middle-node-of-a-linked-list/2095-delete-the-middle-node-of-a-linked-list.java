@@ -20,10 +20,8 @@ class Solution {
         ListNode prev = null;
         ListNode slowPtr = head;
         ListNode fastPtr = head;
-        int count = 0;
         while(fastPtr.next != null && fastPtr.next.next != null)
         {
-            count++;
             prev = slowPtr;
             slowPtr = slowPtr.next;
             fastPtr = fastPtr.next.next;
